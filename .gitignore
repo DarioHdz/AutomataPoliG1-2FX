@@ -2,6 +2,5 @@
 .mvn
 target
 pom.xml
-.gitignore
 mvnw
 mvnw.cmd
