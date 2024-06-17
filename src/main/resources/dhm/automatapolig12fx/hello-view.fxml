@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dhm.automatapolig12fx.Controller">
+  <columnConstraints>
+    <ColumnConstraints />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints />
+  </rowConstraints>
+  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="610.0">
+    <VBox layoutY="-1.0" prefHeight="500.0" prefWidth="600.0">
+      <AnchorPane prefHeight="163.0" prefWidth="600.0">
+        <Label layoutX="14.0" layoutY="43.0" text="Ingresar cadena:">
+          <font>
+            <Font name="Roboto Regular" size="22.0" />
+          </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="8.0" text="Origen">
+          <font>
+            <Font name="Roboto Bold" size="24.0" />
+          </font>
+        </Label>
+        <TextField fx:id="txtFrase" layoutX="11.0" layoutY="75.0" prefHeight="26.0" prefWidth="578.0" />
+        <Label layoutX="11.0" layoutY="109.0" text="Seleccionar archivo .txt:">
+          <font>
+            <Font name="Roboto Regular" size="22.0" />
+          </font>
+        </Label>
+        <Button fx:id="btnArchivo" layoutX="265.0" layoutY="110.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="71.0" text="Buscar">
+          <font>
+            <Font name="Roboto Regular" size="14.0" />
+          </font>
+        </Button>
+        <CheckBox fx:id="chkArchivo" layoutX="359.0" layoutY="114.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="18.0" />
+        <Label fx:id="lblNombreArchivo" alignment="CENTER" contentDisplay="CENTER" layoutX="391.0" layoutY="117.0" opacity="0.7" prefHeight="17.0" prefWidth="198.0" text="Nombre archivo" textAlignment="CENTER" />
+      </AnchorPane>
+      <HBox prefHeight="363.0" prefWidth="600.0">
+        <AnchorPane prefHeight="354.0" prefWidth="600.0">
+          <TextArea fx:id="txtSalida" layoutX="12.0" layoutY="31.0" prefHeight="298.0" prefWidth="413.0" />
+          <Label layoutX="14.0" layoutY="-3.0" text="Salida">
+            <font>
+              <Font name="Roboto Bold" size="24.0" />
+            </font>
+          </Label>
+          <Button fx:id="btnProcesar" layoutX="473.0" layoutY="39.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="71.0" text="Revisar">
+            <font>
+              <Font name="Roboto Bold" size="15.0" />
+            </font>
+          </Button>
+          <Button fx:id="btnSalir" layoutX="473.0" layoutY="291.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="71.0" text="Salir">
+            <font>
+              <Font name="Roboto Regular" size="17.0" />
+            </font>
+          </Button>
+               <Label layoutX="451.0" layoutY="89.0" text="Ejemplos:">
+                  <font>
+                     <Font name="Roboto Regular" size="22.0" />
+                  </font>
+               </Label>
+               <Label layoutX="462.0" layoutY="121.0" prefHeight="32.0" prefWidth="107.0" style="-fx-background-color: #00b52e;" text="34x^2+5x+3">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Label layoutX="462.0" layoutY="164.0" prefHeight="32.0" prefWidth="107.0" style="-fx-background-color: #00b52e;" text="      1x+5" textAlignment="CENTER">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Label layoutX="462.0" layoutY="205.0" prefHeight="32.0" prefWidth="107.0" style="-fx-background-color: #ff2f0e;" text="     2x2+x">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Label layoutX="462.0" layoutY="246.0" prefHeight="32.0" prefWidth="107.0" style="-fx-background-color: #ff2f0e;" text="    x^ 2+67" textAlignment="CENTER">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+        </AnchorPane>
+      </HBox>
+    </VBox>
+  </AnchorPane>
+</GridPane>
